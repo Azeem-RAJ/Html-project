@@ -3,19 +3,70 @@ body,*{
     padding: 0;
     box-sizing: border-box;
 }
-
-     /*main-header */
-.main-header
-{
-background: #4A8878;
+  /*font-family*/
+  @font-face {
+    font-family: 'Inter'; /* Choose a name for your custom font */
+    src: url('../fontfamily/inter/Inter-Medium.otf') format('opentype')   /* You can provide multiple file formats for better browser compatibility */
+  }
+  
+a {
+  text-decoration: none;
 }
-.main-nav
-{
+     /*start-main-header */
+.main-header{
+background: #1D3247;
+padding: 26px 0px;
+}
+.main-nav{
   display: flex;
   justify-content: space-evenly;
 }
-.nav-icons
-{
+.nav-icons{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: end;
 }
+.nav-icons li{
+  margin-right: 60px;
+}
+.nav-heart {
+  position: relative;
+}
+.nav-heart ::before{
+  content: '9+';
+  position: absolute;
+  top: 3px;
+  left: 22px;
+  background: #ff0303;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+}
+.main-nav a{
+  color: #FFF;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+     /*start-search-bar */
+    .search-bar{
+      background:#AB9574;;
+      padding: 26px 0px;
+    }
+    .search h1{
+      color: #1D3247;
+      font-family: 'Inter';
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+    }
+    .search-input input{
+    padding: 15px 0px;
+    width: 100%;
+  }
